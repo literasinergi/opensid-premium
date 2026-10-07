@@ -1,49 +1,50 @@
-Rilis versi 2609.0.0 ini berisi penambahan integrasi data desil Kemensos SIKNg ke laporan DTSEN dan perbaikan lainnya yang diminta oleh komunitas SID.
-
+Rilis versi 2610.0.0 ini berisi Penambahan fitur penyesuaian kepala keluarga meninggal/pindah maka data tersebut dengan sendirinya terhapus secara otomatis di DTSEN dan perbaikan lainnya yang diminta oleh komunitas SID.
 
 ### FITUR
 
-1. [#11532](https://github.com/OpenSID/OpenSID/issues/11532) Penambahan integrasi data desil Kemensos SIKNg ke laporan DTSEN.
-2. [#11305](https://github.com/OpenSID/OpenSID/issues/11305) Penambahan fitur data DTSEN otomatis sinkron dengan data keluarga.
-3. [#11528](https://github.com/OpenSID/OpenSID/issues/11528) Penambahan fitur  DTSEN filter wilayah.
-4. [#11354](https://github.com/OpenSID/OpenSID/issues/11354) Penambahan fitur penerapan pembatasan akses wilayah pada modul Wilayah Administrasi.
-5. [#11541](https://github.com/OpenSID/OpenSID/issues/11541) Penambahan fitur validasi template surat kustom sebelum dipakai mencetak.
+
+1. [#11913](https://github.com/OpenSID/OpenSID/issues/11913) Penambahan fitur tambahan ucwords pemisah romawi.
+2. [#11990](https://github.com/OpenSID/OpenSID/issues/11990) Penambahan fitur penyesuaian yang tanda tangan untuk rekapitulasi kehadiran.
+3. [#11601](https://github.com/OpenSID/OpenSID/issues/11601) Penambahan fitur surat keterangan kelahiran tidak dibatasi SHDK.
+4. [#11938](https://github.com/OpenSID/OpenSID/issues/11938) Penambahan fitur penyesuaian kepala keluarga meninggal/pindah maka data tersebut dengan sendirinya terhapus secara otomatis di DTSEN.
+5. [#7191](https://github.com/OpenSID/premium/issues/7191) Penambahan kategori Statistik DTSEN (Desil Kemensos & Desil Hasil Analisis) pada Statistik Kependudukan dan halaman statistik publik untuk semua tema.
+6. [#3](https://github.com/OpenSID/modul-dtsen/issues/3) Penambahan indikator kesehatan DTSEN 428.a S/D 428.j.
+7. [#5](https://github.com/OpenSID/modul-dtsen/issues/5) Penambahan fitur pendataan dengan menampilkan data bantuan bantuan yang di terima pada laporan DTSEN.
+8. [#4](https://github.com/OpenSID/modul-dtsen/issues/4) Penambahan fitur pengaturan poin desil untuk super admin.
+9. [#15](https://github.com/OpenSID/modul-dtsen/issues/15) Penambahan fitur halaman statiktik pada menu DTSEN.
+10. [#14](https://github.com/OpenSID/modul-dtsen/issues/14) Penambahan API statistik desil untuk kebutuhan tema.
 
 
 ### BUG
 
-1. [#11787](https://github.com/OpenSID/OpenSID/issues/11787) Perbaikan perintah opensid:module tetap meminta input modul meski tidak ada modul terdeteksi.
-2. [#11788](https://github.com/OpenSID/OpenSID/issues/11788) Perbaikan Kolom qr_code_tte tidak ditemukan pada tabel tweb_surat_format setelah restore database lama.
-3. [#11533](https://github.com/OpenSID/OpenSID/issues/11533) Perbaikan error keterangan Demografi di DTKS.
-4. [#11786](https://github.com/OpenSID/OpenSID/issues/11786) Perbaikan urutan kartu peserta pada menu Bantuan.
-5. [#6831](https://github.com/OpenSID/premium/issues/6831) Perbaikan notifikasi permohonan surat baru tidak pernah sampai ke mobile.
-6. [#11807](https://github.com/OpenSID/OpenSID/issues/11807) Perbaikan kasus null pada getDokumen ketika dokumen tidak ditemukan.
-7. [#11808](https://github.com/OpenSID/OpenSID/issues/11808) Perbaikan beberapa pemanggilan first()->toArray() tanpa null-check pada input pengguna (Notif, fmandiri/Surat, Permohonan_surat_admin).
-8. [#11809](https://github.com/OpenSID/OpenSID/issues/11809) Perbaikan User::superAdmin() scope mengembalikan tipe tidak konsisten.
-9. [#11896](https://github.com/OpenSID/OpenSID/issues/11896) Perbaikan erorr kode isian tanggal, hari, bulan, dan tahun tidak tampil sesuai.
-10. [#11893](https://github.com/OpenSID/OpenSID/issues/11893) Perbaikan data umur penduduk tetap bertambah walaupun sudah berstatus meninggal.
-11. [#11837](https://github.com/OpenSID/OpenSID/issues/11837) Perbaikan halaman blank dan gagal unduh file excel pada fitur cetak dan ekspor rekap catatan harian kerja di RekapCatatanController.
-12. [#11891](https://github.com/OpenSID/OpenSID/issues/11891) Perbaikan Uncaught TypeError di jquery.validate.min.js (deledonjo) saat klik kontrol layer peta pada halaman Lokasi Pelapak.
-13. [#11892](https://github.com/OpenSID/OpenSID/issues/11892) Perbaikan error data pada pemantauan dan rekapitulasi anak 0-2 tahun tidak sesuai.
-14. [#11897](https://github.com/OpenSID/OpenSID/issues/11897) Perbaikan error saat perpanjang layanan.
-15. [#6831](https://github.com/OpenSID/premium/issues/6831) Perbaikan notifikasi permohonan surat baru tidak pernah sampai ke mobile.
+1. [#7088](https://github.com/OpenSID/premium/issues/7088) Perbaikan tombol unduh pada tema tetap aktif meskipun tema telah terdownload dan terinstall.
+2. [#7155](https://github.com/OpenSID/premium/issues/7155) Perbaikan tampilan modal pasang modul pada halaman Paket Tambahan.
+3. [#7089](https://github.com/OpenSID/premium/issues/7089) Perbaikan riwayat pemesanan pada paket tambahan selalu kosong tidak ada data, padahal response dari API ada datanya.
+4. [#11384](https://github.com/OpenSID/OpenSID/issues/11384) Perbaikan posisi TTD cetak Bumindes Penduduk (pamong_ketahui vs pamong_ttd).
+5. [#12003](https://github.com/OpenSID/OpenSID/issues/12003) Perbaikan warna area pada peta dihalaman website tidak sama dengan halaman identitas desa.
+6. [#12001](https://github.com/OpenSID/OpenSID/issues/12001) Perbaikan penjumlahan di surat keterangan harga tanah tidak terjumlah.
+7. [#12002](https://github.com/OpenSID/OpenSID/issues/12002) Perbaikan hasil tinjau pdf dan cetak surat, Lebar baris dan isian dibeberapa tabel tidak rapi.
+8. [#11995](https://github.com/OpenSID/OpenSID/issues/11995) Perbaikan status kehadiran tidak sesuai dan tidak terdata di rekapitulasi bulanan.
+9. [#11949](https://github.com/OpenSID/OpenSID/issues/11949) Perbaikan tidak muncul tombol untuk passphrase tte di akun kades.
+10. [#12006](https://github.com/OpenSID/OpenSID/issues/12006) Perbaikan badge belum terverifikasi generik tanpa hardcode nama modul.
 
 
-### Optimasi
 
-1. [#11811](https://github.com/OpenSID/OpenSID/issues/11811) Optimasi fitur deteksi spam menggunakan algoritma machine learning (Logistic Regression).
+### TEKNIS
 
 
-### Teknis 
-
-1. [#6849](https://github.com/OpenSID/premium/issues/6849) Penambahan SSO akses panel admin OpenSID dari OpenKab.
-2. [#6889](https://github.com/OpenSID/premium/issues/6899) Standardisasi komponen input pengaturan aplikasi menggunakan modular blade components.
-
-### Keamanan
-
-1. [#6976](https://github.com/OpenSID/premium/issues/6976) Perbaikan keamanan untuk mencegah PHP Object Injection (POI) pada decryption cookie RFM (Rich Filemanager).
-2. [#6985](https://github.com/OpenSID/premium/issues/6985) Perbaikan RCE via decrypt(serialize=true) pada gallery.
-3. [#7001](https://github.com/OpenSID/premium/issues/7001) Perbaikan keamanan internal_api/peta.
-4. [#7020](https://github.com/OpenSID/premium/issues/7020) Perbaikan data sensitif author terekspos di endpoint publik GET /internal_api/arsip — PII + OTP/telegram bocor tanpa autentikasi.
-5. [#7021](https://github.com/OpenSID/premium/issues/7021) Perbaikan Data sensitif terekspos via var setting/config di HTML — NIP Camat/Kades, nomor operator, id config, mapbox_key, google_api_key, ip kehadiran dkk tanpa autentikasi.
-6. [#7002](https://github.com/OpenSID/premium/issues/7002) Perbaikan internal_api/verifikasi-surat tanpa filter wajib — bocorkan seluruh arsip surat desa + PDF (NIK, alamat, keperluan surat) tanpa auth.
+1. [#7043](https://github.com/OpenSID/premium/issues/7043) Penerapan workflow rilis — build-release.yml duplikasi & gagal bundling Pelanggan.
+2. [#7045](https://github.com/OpenSID/premium/issues/7045) Pipeline rilis otomatis Umum 2701–2709 — finalisasi release-umum.yml + pipeline/ (dari Premium pra-refaktor).
+3. [#7031](https://github.com/OpenSID/premium/issues/7031) Konversi gerbang kompatibilitas core ke blok require gaya composer.json.
+4. [#7047](https://github.com/OpenSID/premium/issues/7047) Membuang field priority dari skema module.json.
+5. [#7121](https://github.com/OpenSID/premium/issues/7121) Opsi opensid:bersih-folder untuk mengeluarkan daftar path file kandidat (bukan cuma ringkasan).
+6. [#11996](https://github.com/OpenSID/OpenSID/issues/11996) Perbaikan error Larastan dan testing DtsenStatistikDesilTest.
+7. [#11997](https://github.com/OpenSID/OpenSID/issues/11997) Bersihkan file dan folder dari rilis produksi.
+8. [#11999](https://github.com/OpenSID/OpenSID/issues/11999) Perbaikan testing di lingkungan wsl dan codespace.
+9. [#12000](https://github.com/OpenSID/OpenSID/issues/12000) Saat mode demo agar bisa ganti identitas desa.
+10. [#7173](https://github.com/OpenSID/premium/issues/7173) Menghapus Duplikat foreign key konflik pada tweb_penduduk_mandiri.id_pend (ON DELETE CASCADE vs SET NULL).
+11. [#7159](https://github.com/OpenSID/premium/issues/7159) Satukan mekanisme migrasi custom OpenSID dengan artisan migrate standar Laravel.
+12. [#7172](https://github.com/OpenSID/premium/issues/7172) Bedakan pesan "modul tidak ditemukan" vs tidak memiliki migrasi di opensid:module.
+13. [#7166](https://github.com/OpenSID/premium/issues/7166) Backup/restore Database Gabungan (multi-desa) bisa dijalankan via CLI (`php artisan opensid:multidb-backup` / `opensid:multidb-restore`).
+14. [#7167](https://github.com/OpenSID/premium/issues/7167) Backup folder desa bisa dijalankan via CLI (`php artisan opensid:desa-backup`).
+15. [#7196](https://github.com/OpenSID/premium/issues/7196) Update tema Esensi, Wira, Palanta, Seruit-lite, Lestari.
